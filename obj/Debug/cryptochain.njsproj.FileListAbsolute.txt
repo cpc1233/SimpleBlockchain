@@ -1,0 +1,3 @@
+C:\Users\cpc12\cryptochain\cryptochain\cryptochain\obj\Debug\cryptochain.njsproj.AssemblyReference.cache
+C:\Users\cpc12\cryptochain\cryptochain\cryptochain\obj\Debug\cryptochain.njsproj.CoreCompileInputs.cache
+C:\Users\cpc12\cryptochain\cryptochain\cryptochain\bin\Microsoft.NodejsTools.WebRole.dll
