@@ -6,7 +6,7 @@ class Blockchain {
 
     addBlock(data) {
         const lastHash = this.chain[this.chain.length - 1].hash;
-        const hash = lightningHash(data + lastHash);
+        const hash = simpleHash(data + lastHash);
         const block = new Block(data, hash, lastHash);
         this.chain.push(block);
     }
