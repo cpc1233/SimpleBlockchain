@@ -1,9 +1,13 @@
 {
-  "name": "nodejs-chain-project-1",
-  "version": "0.0.0",
-  "description": "Nodejs Chain Project 1",
+  "name": "cryptochain",
+  "version": "1.0.0",
+  "description": "A simple blockchain using Node.js",
   "main": "app.js",
-  "author": "Connor Cassidy"
-    "name": "Simple Blockchain"
+  "scripts": { "test": "jest --watchAll" },
+  "keywords": [],
+  "author": "Connor Cassidy",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^23.6.0"
   }
 }
