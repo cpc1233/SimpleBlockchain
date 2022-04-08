@@ -1,13 +1,18 @@
+const Block = require('./block');
+
 class Blockchain {
     constructor() {
-        const genesis = new Block('gen-data', 'gen-hash', 'gen-lastHash');
-        this.chain = [genesis];
+        this.chain = [Block.genesis()];
     }
 
-    addBlock(data) {
-        const lastHash = this.chain[this.chain.length - 1].hash;
-        const hash = simpleHash(data + lastHash);
-        const block = new Block(data, hash, lastHash);
-        this.chain.push(block);
+    addBlock({ data }) {
+        const newBlock = Block.mineBlock({
+            lastBlock: this.chain[this.chain.length - 1],
+            data
+        });
+
+        this.chain.push(newBlock);
     }
 }
+
+module.exports = Blockchain;
